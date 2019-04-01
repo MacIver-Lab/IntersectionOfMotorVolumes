@@ -12,19 +12,19 @@ After cloning or downloading repo including subdirectories. Start Matlab and set
 
 ## File details 
 
-Visualize_fishMotorVolume_McellActiveVsSilent.m
+Visualize_fishMotorVolume_McellActiveVsSilent.m<br/>
 Visualizes the fish motor volume for M-cell active and silent cases. Replicates the visualization in Figure 7D.
 
-VisualizeVolumeIntersections.m
+VisualizeVolumeIntersections.m<br/>
 Visualizes the volume intersection of the fish motor volume and the mask swept volume. Replicates the visualization in Figure 7B.
 
-VolumeIncrease_McellActiveVsSilent.m
+VolumeIncrease_McellActiveVsSilent.m<br/>
 Generates fish motor volumes for M-cell active and silent cases for different times remaining at escape and checks the increase in motor volume for M-cell active cases. Runs the simulation that produces Figure 7E.
 
-VolumeIntersectionSimulationRun.m
+VolumeIntersectionSimulationRun.m<br/>
 Generates many virtual fish motor volumes and intersects them with mask swept volumes approaching from different directions to determine the non-engulfed fraction of the fish motor volume. Runs simulation that produces Figure 7C.
 
-VolumeIntersectionSimulationRun_McellActiveVsSilent.m
+VolumeIntersectionSimulationRun_McellActiveVsSilent.m<br/>
 Generates many virtual fish motor volumes for M-cell active and silent cases and intersects them with mask swept volumes approaching from different directions to determine the non-engulfed fraction of the fish motor volume for each case. Runs simulation that produced Figure 7F and 7G.
 
 For additional details on code please read comments within each file. 
@@ -33,34 +33,35 @@ For additional details on code please read comments within each file.
 
 ### functions
 
-maskPoints_maker.m
+maskPoints_maker.m<br/>
 Creates the points that will be used to make the mask swept volume. 
 
-maskVolume_maker.m
+maskVolume_maker.m<br/>
 Creates the 3D polyhedron representing the mask swept volume. Uses the output of maskPoints_maker
 
-VolumeIntersectionFunction.m
+VolumeIntersectionFunction.m<br/>
 Runs volume intersection simulations for a range of initial bend velocities, a range of times remaining, and single propulsive velocity
 
-zebrafishMotorVolume_contour.m
+zebrafishMotorVolume_contour.m<br/>
 Given an initial bend velocity, a propulsive velocity, a time resolution, and bounds in x, y, and z to define a 3D volume, this returns a 3D matrix where each element is the time needed to reach a point in 3D space defined by the values in the index of vectors X, Y, and Z.
 
-zebrafishMotorVolume_maker.m
+zebrafishMotorVolume_maker.m<br/>
 Given an intial bend velocity, an initial position, a time remaining and a propulsive velocity, this function creates a 3D polyhedron object that is the fish motor volume. 
 
-zebrafishMV_engulfProp.m
+zebrafishMV_engulfProp.m<br/>
 Given a fish motor volume and a mask swept volume, the function returns the proportion of the fish motor volume intersected by the mask swept volume.
 
+For additional details on code please read comments within each file. 
 
 ### data
 
-3DFishBody.mat
+3DFishBody.mat<br/>
 3D polyhedron representing the larval zebrafish body.
 
-avgPropVelocities.mat
+avgPropVelocities.mat<br/>
 Average propulsive velocities in mm/ms from a subset of videos.
 
-InitialBendVelocities.mat
+InitialBendVelocities.mat<br/>
 Initial (absolute) bend velocities from trials where fish finished the intial bend. All bend velocities are positive. 
  
 
