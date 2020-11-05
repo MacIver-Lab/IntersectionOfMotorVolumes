@@ -1,5 +1,4 @@
-# Intersection of motor volumes predicts the outcome of predator-prey interactions
-
+# Intersection of motor volumes predicts the outcome of ambush predation of larval zebrafish
 This is the Matlab code needed to perform the fish motor volume and mask swept volume simuations contained within the manuscript "Intersection of motor volumes predicts the outcome of predator-prey interactions" by Kiran Bhattacharyya, David McLean, and Malcolm MacIver. 
 
 The files in the main directory (details below) repeat the simulations used to generate the panels in Figure 7. All files use functions that can be found in the *functions* subdirectory. Some files also use some of the data that was collected in the study which can be found in the *data* subdirectory. NOTE: Only the data relevant for the motor volume simulations are found in the *data* subdirectory. 
